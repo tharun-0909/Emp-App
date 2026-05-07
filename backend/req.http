@@ -1,0 +1,29 @@
+### Create Employee
+POST http://localhost:3000/emp-api/employees
+Content-Type: application/json
+
+{
+    "name":"ravi",
+    "email":"ravi@gmail.com",
+    "mobile":4876843219,
+    "designation":"Intern",
+    "companyName":"JPMC"
+}
+
+### Read all Employee
+GET http://localhost:3000/emp-api/employees
+
+### Edit employee
+PUT http://localhost:3000/emp-api/employees/69ca25a2db10f5b87109cd65
+Content-Type: application/json
+
+{
+    "name":"paul",
+    "email":"paul@gmail.com",
+    "mobile":9879843200,
+    "designation":"Developer",
+    "companyName":"Darwin Box"
+}
+
+### Delete employee
+DELETE http://localhost:3000/emp-api/employees/69ca25c0db10f5b87109cd69
