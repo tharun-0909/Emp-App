@@ -3,6 +3,7 @@ import {config} from 'dotenv'
 import {connect} from 'mongoose'
 import {empApp} from './APIs/EmployeeAPI.js'
 import cors from 'cors'
+import path from 'path'
 
 config()
 
@@ -17,7 +18,16 @@ app.use(exp.json())
 
 const port=process.env.PORT || 3000
 
+//Serve static files from frontend/dist
+const __dirname = path.resolve()
+app.use(exp.static(path.join(__dirname, 'frontend/dist')))
+
 app.use("/emp-api",empApp)
+
+//Catch-all route to serve frontend index.html
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend/dist/index.html'))
+})
 
 async function connectDB(){
     try{
