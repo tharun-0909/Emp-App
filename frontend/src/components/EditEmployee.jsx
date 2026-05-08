@@ -24,7 +24,7 @@ function EditEmployee() {
     //make HTTP PUT req to update employee details
     
     try{
-      const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+      const API_URL = import.meta.env.VITE_API_URL || "";
       const res = await axios.put(
       `${API_URL}/emp-api/employees/${state._id}`,
       modifiedEmp,

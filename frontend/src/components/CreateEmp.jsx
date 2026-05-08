@@ -16,7 +16,7 @@ function CreateEmp() {
     try{
       setLoading(true)
       //make HTTP POST req
-      const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+      const API_URL = import.meta.env.VITE_API_URL || "";
       let res=await fetch(`${API_URL}/emp-api/employees`,
       {
         method:"POST",
