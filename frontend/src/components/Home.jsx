@@ -6,7 +6,7 @@ function Home() {
   return (
     <div>
       <h1 className='text-5xl'>Counter: {counter}</h1>
-      <button onClick={changeCounter} className='p-4 bg-gradient-blue 200'>Change Count</button>
+      <button onClick={changeCounter} className='p-4 bg-amber 400'>Change Count</button>
     </div>
   )
 }
