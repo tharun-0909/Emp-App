@@ -3,7 +3,7 @@ import { Outlet } from 'react-router'
 
 function RootLayout() {
   return (
-    <div className='bg-yellow-200'>
+    <div className='bg-yellow-300'>
         <Header />
         <div className='min-h-screen mx-0 sm:mx-5 md:mx-10 lg:mx-20 p-20'>
             <Outlet />
