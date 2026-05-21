@@ -2,7 +2,7 @@
 
 A full-stack web application for managing employees, built with a modern JavaScript stack. The project is organized as a monorepo containing a React frontend and a Node.js/Express backend, designed to be deployed seamlessly on Render.
 
-## 🚀 Tech Stack
+ Tech Stack
 
 ### Frontend
 - **React 19** with **Vite** for fast development and building.
@@ -17,7 +17,7 @@ A full-stack web application for managing employees, built with a modern JavaScr
 - **dotenv** for environment variable management.
 - **CORS** enabled for cross-origin requests.
 
-## 📁 Project Structure
+ Project Structure
 
 ```text
 emp-app-main/
@@ -34,7 +34,7 @@ emp-app-main/
 └── render.yaml             # Render Blueprint for automated deployment
 ```
 
-## 🛠️ Local Development Setup
+ Local Development Setup
 
 ### Prerequisites
 - Node.js installed on your machine.
@@ -90,7 +90,7 @@ npm run dev
 ```
 The frontend will be available at `http://localhost:5173`.
 
-## ☁️ Deployment
+ Deployment
 
 This project includes a `render.yaml` Blueprint file for automated deployment on [Render](https://render.com).
 
